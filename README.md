@@ -7,7 +7,7 @@ The code comes with a mildly noxious sample game, "Space Cargo Hauler," which de
 
 Please note that the game is currently case-sensitive, so if you have an option to "Eat mushroom", typing "Eat Mushroom" will not work.
 
-This project was inspired by Osake.
+This project was inspired by [Joshua French](http://github.com/osake).
 
 Game Structure
 --------------
@@ -30,12 +30,15 @@ Story Structure
 The entire story structure is a hash of hashes.  The hash is made up of two parts, scenes and options, which are combined to create a path through the story.
 
 * Scene
+
     { "Description" => options_hash }
 
 * Option
+
     { "Option" => scene_hash }
 
 You can let the interpreter know that you've reached the end of the story by using an :end symbol instead of an options hash.
+
     { "Description" => :end }
   
 Assembling the story is as simple as creating a valid hash of scenes and options.  The following story has 5 nodes, 2 decision points, and 3 possible endings:
