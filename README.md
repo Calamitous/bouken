@@ -29,16 +29,13 @@ Story Structure
 
 The entire story structure is a hash of hashes.  The hash is made up of two parts, scenes and options, which are combined to create a path through the story.
 
-* Scene
-
+### Scene ###
     { "Description" => options_hash }
 
-* Option
-
+### Option ###
     { "Option" => scene_hash }
 
 You can let the interpreter know that you've reached the end of the story by using an :end symbol instead of an options hash.
-
     { "Description" => :end }
   
 Assembling the story is as simple as creating a valid hash of scenes and options.  The following story has 5 nodes, 2 decision points, and 3 possible endings:
