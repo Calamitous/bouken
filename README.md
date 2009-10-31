@@ -1,4 +1,5 @@
 Bouken -- a simple branching path game engine
+---------------------------------------------
 
 Gameplay
 --------
@@ -7,7 +8,7 @@ If you read the old "Choose You Own Adventure" novels back in the day, then you 
 
 The code comes with a mildly noxious sample game, "Space Cargo Hauler," which demonstrates how a game is constructed.
 
-Please note that the game is currently case-sensitive, so if you have an option to "Eat mushroom", typing "Eat Mushroom" will not work.
+Please note that the game is currently case-sensitive, so if you have an option to "Eat Mushroom", typing "eat mushroom" will not work.
 
 This project was inspired by [Joshua French](http://github.com/osake).
 
@@ -21,7 +22,7 @@ The story_runner.rb will, by default, load up story_data.rb, which contains the 
 
 In order to write your own game, simply create your own story_data.rb.  It doesn't matter what code is in story_data.rb, or how it's built, as long as it produces
 
-* An instance variable @story, which contains
+* An instance variable @story, which contains:
 * A valid Story Structure hash, outlined below.
 
 The interpreter picks up this hash and begins taking the user through your game.
