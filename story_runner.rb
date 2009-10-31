@@ -26,7 +26,6 @@ node = @story
 node_data = node[node.keys.first]
 
 until node_data == :end
-  # puts node_data.inspect, "!!!!!!"
   puts "#{node.keys.first.wrapped}\n\n* Options: #{node_data.keys.join(', ').wrapped}\n"
   new_key = prompted_get
   unless node_data[new_key]

@@ -1,7 +1,9 @@
+Bouken -- a simple branching path game engine
+
 Gameplay
 --------
 
-If you read the old "Choose You Own Adventure" novels back in the day, then you should know what to expect.  You're given a description of the situation your character finds him or herself in, and a handful of options.  Choose one of the options and teh story advances to the next decision point.  Rinse and repeat.
+If you read the old "Choose You Own Adventure" novels back in the day, then you should know what to expect.  You're given a description of the situation your character finds him or herself in, and a handful of options.  Choose one of the options and the story advances to the next decision point.  Rinse and repeat.
 
 The code comes with a mildly noxious sample game, "Space Cargo Hauler," which demonstrates how a game is constructed.
 
@@ -61,4 +63,12 @@ Other
 There's no restriction on the way story data is constructed.  The sample story code is assembled in a very simple fashion for readability, but a lightweight DSL could easily reduce the complexity of building out a story hash for very large, complex games.
 
 Additionally given the flexibility of having the story data defined in Ruby code, there's nothing to stop you from loading story text and structure from a database, or remotely from a web page, or randomly generation story elements and options.
+
+Purpose
+-------
+
+The goal was to write a usable game engine with as little code as possible.  The choose-your-own-adventure format was an excellent fit, and the use of hashes as a data store elimated the need for parsing or external libraries.
+
+Surprisingly, the content for the sample game took nearly ten times as long as writing the engine.  In retrospect, this should not have been nearly as surprising as it was.
+
 
