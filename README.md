@@ -18,7 +18,7 @@ Game Structure
 To play, type:
     ruby story_runner.rb
 
-The story_runner.rb will, by default, load up story_data.rb, which contains the structure of the game.
+The story_runner.rb will load up story_data.rb by default.  This file should contain the structure of the game.
 
 In order to write your own game, simply create your own story_data.rb.  It doesn't matter what code is in story_data.rb, or how it's built, as long as it produces
 
@@ -56,14 +56,14 @@ Additionally, since the descriptions and option texts are just regular ruby stri
       { "Option #{var = rand(6)}" => { "You selected #{var}!" => :end } }
     }
 
-Please note that every story path must be closed with an :end tag.  All hash keys are expected to be strings.
+Please note that every story path must be closed with an :end tag.  All hash keys are expected to be strings, and all hash values should be either a string or the :end symbol.
 
 Other
 -----
 
 There's no restriction on the way story data is constructed.  The sample story code is assembled in a very simple fashion for readability, but a lightweight DSL could easily reduce the complexity of building out a story hash for very large, complex games.
 
-Additionally given the flexibility of having the story data defined in Ruby code, there's nothing to stop you from loading story text and structure from a database, or remotely from a web page, or randomly generation story elements and options.
+Additionally, given the flexibility of having the story data defined in Ruby code, there's nothing to stop you from loading story text and structure from a database, or remotely from a web page, or randomly generated story elements and options.
 
 Purpose
 -------
