@@ -63,7 +63,7 @@ Other
 
 There's no restriction on the way story data is constructed.  The sample story code is assembled in a very simple fashion for readability, but a lightweight DSL could easily reduce the complexity of building out a story hash for very large, complex games.
 
-Additionally, given the flexibility of having the story data defined in Ruby code, there's nothing to stop you from loading story text and structure from a database, or remotely from a web page, or randomly generated story elements and options.
+Additionally, given the flexibility of having the story data defined in Ruby code, there's nothing to stop you from loading story text and structure from a database, or remotely from a web page, or randomly generating story elements and options.
 
 Purpose
 -------
