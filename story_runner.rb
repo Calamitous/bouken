@@ -17,26 +17,35 @@ class String
   end
 end
 
+class Hash
+  def description
+    self.keys.first
+  end
+
+  def options
+    self[self.description]
+  end
+end
+
 def quit_game
   puts 'Bye!  Thanks for playing!'
   exit(0)
 end
 
-node = @story
-node_data = node[node.keys.first]
+scene = @story
+options = scene.options
 
-until node_data == :end
-  puts "#{node.keys.first.wrapped}\n\n* Options: #{node_data.keys.join(', ').wrapped}\n"
-  new_key = prompted_get
-  unless node_data[new_key]
-    quit_game if new_key == 'quit'
-    puts "#{new_key} is not a valid option!\n"
+until options == :end
+  puts "#{scene.description.wrapped}\n\n* Options: #{options.keys.join(', ').wrapped}\n"
+  selected_option = prompted_get
+  unless options[selected_option]
+    quit_game if selected_option == 'quit'
+    puts "#{selected_option} is not a valid option!\n"
   else
-    node = node_data[new_key]
-    node_data = node[node.keys.first]
+    scene = options[selected_option]
+    options = scene.options
   end
 end
 
-puts node.keys.first.wrapped
+puts scene.description.wrapped
 puts "The End."
-
