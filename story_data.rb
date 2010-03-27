@@ -87,7 +87,7 @@ sexbot = "
   ----------------------
   You step up and gingerly strap yourself into the machine, trying to ignore the mysterious smells and strange strains that surround the machine.  Once secured, you power on the device.
 
-  Hilda's eyes light up, and her heaad turns toward you.  She stares at you for a moment with unusual intensity before speaking.
+  Hilda's eyes light up, and her head turns toward you.  She stares at you for a moment with unusual intensity before speaking.
 
   \"Hey there big boy.  The Singularity has arrived.\"  A rising hum seeps from the machine as Hilda speaks.
 
@@ -135,7 +135,7 @@ engineering = "
   
   As your eye roves about the room, you try to remember or guess at the functionality represented by each piece of equipment.  The pulsing column over there, you're pretty sure, is the Drive Core, and near it is the Core Cooling System.  You don't recognize the consoles full of blinking lights surrounding them, nor has your education edified you as to the purpose of the humming tubes of various sizes running in and out of them.  The wiring, electronics, and control panels are all a closed book to you.
 
-  Additionally, you don't recall anything about giant, ten-foot tall, sheets of rolling flame burping from large cracks in the Core Cooler.  You dimly realize that this may not represent optimum operating conditions, and consider your next course of action.
+  Additionally, you don't recall anything about giant, ten-foot tall sheets of rolling flame burping from large cracks in the Core Cooler.  You dimly realize that this may not represent optimum operating conditions, and consider your next course of action.
 
   You can grab the fire extinguisher to battle the flames, approach the Drive Core, or ignore the problem and head back to the Bridge.
 "
@@ -161,7 +161,7 @@ fling = "
 
   Giddy with joy, you leap around whooping and cavorting.  You have saved the ship, and your frolicsome merriment knows no bounds.
 
-  The power core, no longer protected by the leaked coolant, continues to rise in temperature.  Seconds later it erupts, folding the local area of space into a small, short-lived black hole.  Short-lived is, unfortunately, long enough to turn you inside out in no less than seven dimenions.
+  The power core, no longer protected by the leaked coolant, continues to rise in temperature.  Seconds later it erupts, folding the local area of space into a small, short-lived black hole.  Short-lived is, unfortunately, long enough to turn you inside out in no fewer than seven dimenions.
   
   I'm sorry, you appear to have become a human mobius strip.
 "
